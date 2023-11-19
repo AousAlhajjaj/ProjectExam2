@@ -1,0 +1,56 @@
+@import "_const.scss";
+
+.ournav {
+    margin: 0 !important;
+    z-index: 999 !important;
+
+    #collapsible-nav-dropdown {
+        padding-left: 8px !important;
+    }
+
+    .cart-link {
+        padding-left: 8px !important;
+    }
+
+    .link {
+        padding: 8px !important;
+    }
+
+    a,
+    p,
+    path {
+        font-size: 1rem !important;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .ournav {
+        .cart-icon {
+            display: none !important;
+        }
+
+        .nav-icon {
+            margin-top: 10px !important;
+        }
+    }
+}
+
+
+
+// large devices
+html {
+    @media (min-width: $extra-large) {
+        .ournav {
+            padding: 4rem 0 !important;
+
+            img {
+                width: 80px;
+            }
+
+            svg {
+                font-size: 2.3rem !important;
+            }
+        }
+    }
+}
